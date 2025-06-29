@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BlockRespawner:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BlockRespawner_jar</output-path>
+    <root id="archive" name="BlockRespawner.jar">
+      <element id="module-output" name="BlockRespawner.main" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,10 @@
+name: BlockRespawner
+version: '1.0.0'
+main: wix3y.blockRespawner.BlockRespawner
+api-version: '1.21'
+authors: [ WIX3Y ]
+description: Specified blocks respawn after delay
+permissions:
+  blockrespawner.bypass:
+    description: "Broken blocks in regions don't respawn & has permission to break other blocks in regions."
+    default: op

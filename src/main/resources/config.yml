@@ -1,0 +1,25 @@
+#
+#   ┏━━━━━━━━━━━━━━━━━━━━━━━━ ⊹ ☆ ⊹ ━━━━━━━━━━━━━━━━━━━━━━━━┓
+#
+#                        Block Respawner
+#        Source: https://github.com/WIX3Y/BlockRespawner
+#                          Author: WIX3Y
+#
+#   ┗━━━━━━━━━━━━━━━━━━━━━━━━ ⊹ ☆ ⊹ ━━━━━━━━━━━━━━━━━━━━━━━━┛
+#
+
+# Do not change
+config-version: 1
+
+Areas:
+  COPPER_MINES:
+    Materials:
+    - COPPER_ORE
+    - COAL_ORE
+    - COBBLESTONE
+    - RAW_COPPER_BLOCK
+    ReplaceMaterial: STONE
+    RespawnTime: 300 # In seconds
+    World: world
+    AreaMax: [ 20, 50, 20 ]
+    AreaMin: [ 50, 150, 50 ]
