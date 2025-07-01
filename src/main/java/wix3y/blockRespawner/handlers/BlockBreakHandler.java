@@ -6,6 +6,7 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
+import org.bukkit.block.data.Ageable;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -80,7 +81,12 @@ public class BlockBreakHandler implements Listener {
         respawnBlocks.put(id, new BlockInfo(material, location));
 
         Bukkit.getScheduler().runTaskLater(plugin, () -> {
-            location.getBlock().setType(material);
+            Block block = location.getBlock();
+            block.setType(material);
+            if (block.getBlockData() instanceof Ageable ageable) {
+                ageable.setAge(ageable.getMaximumAge());
+                block.setBlockData(ageable);
+            }
             respawnBlocks.remove(id);
         }, ticks);
     }
