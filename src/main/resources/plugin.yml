@@ -3,7 +3,7 @@ version: '1.0.0'
 main: wix3y.blockRespawner.BlockRespawner
 api-version: '1.21'
 authors: [ WIX3Y ]
-description: Specified blocks respawn after delay
+description: Create custom mining areas where only specific block types can be mined. Mined blocks automatically respawn after a configurable amount of time.
 permissions:
   blockrespawner.bypass:
     description: "Broken blocks in regions don't respawn & has permission to break other blocks in regions."
