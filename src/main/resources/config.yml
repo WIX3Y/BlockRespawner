@@ -12,14 +12,14 @@
 config-version: 1
 
 Areas:
-  COPPER_MINES:
-    Materials:
+  COPPER_MINES: # Name of area (can be any string of your choice)
+    Materials: # List of materials in the area that can be mined
     - COPPER_ORE
     - COAL_ORE
     - COBBLESTONE
     - RAW_COPPER_BLOCK
-    ReplaceMaterial: STONE
-    RespawnTime: 300 # In seconds
-    World: world
-    AreaMax: [ 20, 50, 20 ]
-    AreaMin: [ 50, 150, 50 ]
+    ReplaceMaterial: STONE # Material that mined blocks will be replaced with until they are respawned
+    RespawnTime: 300 # Delay in seconds until blocks are respawned
+    World: world # World in which the area resides in
+    AreaMax: [ 20, 50, 20 ] # Start corner of the area
+    AreaMin: [ 50, 150, 50 ] # End corner of the area

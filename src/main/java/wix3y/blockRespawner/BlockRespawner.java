@@ -26,7 +26,6 @@ public final class BlockRespawner extends JavaPlugin {
 
         File dataFile = new File(getDataFolder(), "data.yml");
         respawnBlocks(dataFile);
-        // TODO respawn any remaining blocks from restart
 
         blockBreakHandler = new BlockBreakHandler(this, configUtil);
 
